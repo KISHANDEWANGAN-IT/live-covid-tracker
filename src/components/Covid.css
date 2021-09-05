@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+.covid {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(148, 193, 255);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+.header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  margin-top: 1rem;
+}
+.header h2,
+h1 {
+  color: rgb(37, 35, 35);
+}
+.liveIcon {
+  color: red;
+}
+.cardContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin-left: 5rem;
+  border: 1px solid aliceblue;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 2rem 0.5rem rgba(26, 26, 27, 0.3);
+  width: 20rem;
+  height: 15rem;
+}
+.card:hover {
+  transition: 0.4s ease;
+  transform: scale(1.2);
+}
+.cCase {
+  color: #ffc107;
+}
+.rCase {
+  color: #198754;
+}
+.dCase {
+  color: #dc3545;
+}
+.card h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: rgb(40, 173, 218);
+}
+.card h2 {
+  font-size: 2rem;
+}
+
+/* media queries  */
+@media (max-width: 800px) {
+  .cardContainer {
+    /* display: block; */
+    display: block;
+    margin-top: 5rem;
+  }
+  .card {
+    margin-bottom: 2rem;
+    margin-left: 0rem;
+    width: 45rem;
+    height: 13rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 40rem;
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    width: 35rem;
+  }
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    width: 32rem;
+  }
+  .header h1 {
+    font-size: 1.7rem;
+  }
+  .header h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .cardContainer {
+    margin-top: 6rem;
+  }
+  .card {
+    width: 30rem;
+  }
+  .card h1 {
+    font-size: 2.7rem;
+  }
+  .card h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 325px) {
+  .card {
+    width: 28rem;
+    font-size: 2rem;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .header h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .card {
+    width: 25rem;
+  }
+  .header h1 {
+    font-size: 1.4rem;
+  }
+  .header h2 {
+    font-size: 1.2rem;
+  }
+}
